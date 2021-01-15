@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.4</Version>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <Version>1.0.5</Version>
     <Authors>Steven Zilberberg</Authors>
     <Company>Steven Zilberberg</Company>
     <Description>An inheritable class to structure CLI Application</Description>
