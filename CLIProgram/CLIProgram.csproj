@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.2</Version>
+    <Authors>Steven Zilberberg</Authors>
+    <Company>Steven Zilberberg</Company>
+    <Description>An inheritable class to structure CLI Application</Description>
+    <PackageProjectUrl>https://github.com/srz2/CLIProgram</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/srz2/CLIProgram</RepositoryUrl>
+    <PackageTags>cli</PackageTags>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\projects\CLIProgram\CLIProgram\CLIProgram.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\projects\CLIProgram\CLIProgram\CLIProgram.xml</DocumentationFile>
+  </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+</Project>
