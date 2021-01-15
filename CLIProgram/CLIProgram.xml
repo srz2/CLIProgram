@@ -94,11 +94,6 @@
             The CLI Program class has been initialized
             </summary>
         </member>
-        <member name="P:CLIProgram.CLI.CliProgram.HelpDoc">
-            <summary>
-            Get the list of strings which make up the help prompt
-            </summary>
-        </member>
         <member name="M:CLIProgram.CLI.CliProgram.#ctor(System.String[],System.Int32)">
             <summary>
             Constructor for the CLIProgram Helper
@@ -296,7 +291,12 @@
         </member>
         <member name="M:CLIProgram.CLI.Support.CliProgramUsage.showHelp">
             <summary>
-            Show the help in the console
+            Print the help in the console
+            </summary>
+        </member>
+        <member name="M:CLIProgram.CLI.Support.CliProgramUsage.getHelp">
+            <summary>
+            Get the list of strings which make up the help prompt
             </summary>
         </member>
         <member name="T:CLIProgram.CLI.Base.CliProgramBase">
