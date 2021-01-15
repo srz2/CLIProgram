@@ -21,7 +21,7 @@ Create a class, to represent your program and inherit this class. The only argum
 needs to be passed to it. The expected arguments to be given to the inherited constructor are the `cli args` and the
 `minimum arguments allowed`. On program start, the number of args given will be counted.
 
-## Method: Start()
+### Method: Start()
 
 This is the method which starts the cli application logic. This method is meant to be overridden to perform the
 program's logic, however **the super method must be called**, otherwise the standard checks will be skipped.
@@ -32,10 +32,15 @@ The standard checks which occur, in order, are:
 	- Checks for help flags
 	- Checks the argument list contains at least the minimum expected number of args
 
-## Method: Stop()
+### Method: Stop()
 
 This method will quit the program, with the exit code of `0`. It is also able to be overridden for if the user wants
 to implement specific functionality.
+
+### Method: startupCheck()
+
+This is a `protected` method which can be overridden. This can either be made to override the default behavior of startup where the programs arguments are checked so new checks can be done, or by **calling the super method**, the startupCheck() can be enhanced and extended.
+
 
 ## Internal Methods and Features
 
