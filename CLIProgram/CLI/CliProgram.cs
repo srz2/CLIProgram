@@ -95,17 +95,6 @@ namespace CLIProgram.CLI
         /// The CLI Program class has been initialized
         /// </summary>
         public bool Initialized { get; private set; }
-
-        /// <summary>
-        /// Get the list of strings which make up the help prompt
-        /// </summary>
-        public List<string> HelpDoc
-        {
-            get
-            {
-                return new List<string>(Usage.ToArray());
-            }
-        }
         #endregion
 
         /// <summary>

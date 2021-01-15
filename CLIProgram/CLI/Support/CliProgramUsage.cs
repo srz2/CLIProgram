@@ -64,7 +64,7 @@ namespace CLIProgram.CLI.Support
             lst_mUsage.Clear();
         }
         /// <summary>
-        /// Show the help in the console
+        /// Print the help in the console
         /// </summary>
         public void showHelp()
         {
@@ -72,6 +72,14 @@ namespace CLIProgram.CLI.Support
             {
                 Console.WriteLine(s);
             }
+        }
+
+        /// <summary>
+        /// Get the list of strings which make up the help prompt
+        /// </summary>
+        public List<string> getHelp()
+        {
+            return new List<string>(this.ToArray());
         }
     }
 }
