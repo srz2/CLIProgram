@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Steven Zilberberg</Authors>
     <Company>Steven Zilberberg</Company>
     <Description>An inheritable class to structure CLI Application</Description>
