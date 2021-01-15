@@ -1,6 +1,8 @@
 CLIProgram
 ==========
 
+![NuGet](https://img.shields.io/nuget/v/CLIProgram)
+
 A simple Command Line Program framework to create an easy and consistent experience additing CLI support to programs
 
 ## How to Use
