@@ -8,19 +8,17 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+      - uses: microsoft/setup-msbuild@v1
       - uses: actions/checkout@master
       - uses: greenygh0st/net-proj-release-version@v2
         with:
           # path to the .csproj file
           PROJ_FILE: CLIProgram/CLIProgram.csproj
       - run: echo Building CLIProgram Version ${{ steps.get_version.outputs.RELEASE_VERSION }}
-      - run: dotnet build CLIProgram
+      - run: nuget restore CLIProgram.sln
+      - run: msbuild CLIProgram.sln /p:Configuration=Release
       - uses: rohith/publish-nuget@v2
         with:
           PROJECT_FILE_PATH: CLIProgram/CLIProgram.csproj
