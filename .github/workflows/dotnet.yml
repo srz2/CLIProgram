@@ -1,0 +1,27 @@
+name: .NET Build and Push Nuget
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+      - uses: actions/checkout@master
+      - uses: greenygh0st/net-proj-release-version@v2
+        with:
+          # path to the .csproj file
+          PROJ_FILE: CLIProgram/CLIProgram.csproj
+      - run: echo Building CLIProgram Version ${{ steps.get_version.outputs.RELEASE_VERSION }}
+      - run: dotnet build CLIProgram
+      - uses: rohith/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: CLIProgram/CLIProgram.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
