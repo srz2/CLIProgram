@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.28307.1340
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIProgram.Runnable", "CLIProgram.Runnable\CLIProgram.Runnable.csproj", "{EACC832D-8333-41DC-AE74-B03C671768F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIProgram", "CLIProgram\CLIProgram.csproj", "{CF0A48A3-7B2A-4818-9E72-80AA2A4922AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLIProgram", "CLIProgram\CLIProgram.csproj", "{CF0A48A3-7B2A-4818-9E72-80AA2A4922AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIProgram.Tests", "CLIProgram.Tests\CLIProgram.Tests.csproj", "{FAE2BE14-0AF7-4677-A826-B584395B04B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLIProgram.Tests", "CLIProgram.Tests\CLIProgram.Tests.csproj", "{FAE2BE14-0AF7-4677-A826-B584395B04B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -80,5 +80,21 @@ namespace CLIProgram.Tests
 
             AssertForEmpty(usage);
         }
+
+        [TestMethod]
+        public void TestMultiLineAddSingleCall()
+        {
+            int expectedLines = 3;
+            string CONTENT_3_LINES = "";
+            CONTENT_3_LINES += "This is my first line\n";
+            CONTENT_3_LINES += "This is my second line\n";
+            CONTENT_3_LINES += "This is my last line";
+
+            CliProgramUsage usage = new CliProgramUsage();
+            usage.addToHelp(CONTENT_3_LINES);
+
+            string[] helpDoc = usage.ToArray();
+            Assert.AreEqual(expectedLines, helpDoc.Length);
+        }
     }
 }

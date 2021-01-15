@@ -47,7 +47,14 @@ namespace CLIProgram.CLI.Support
         /// <param name="helpMessage"></param>
         public void addToHelp(string helpMessage)
         {
-            lst_mUsage.Add(helpMessage);
+            if (string.IsNullOrEmpty(helpMessage))
+            {
+                return;
+            }
+
+            string[] messages = helpMessage.Replace("\r", "").Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+            lst_mUsage.AddRange(messages);
         }
         /// <summary>
         /// Clear the help docs
