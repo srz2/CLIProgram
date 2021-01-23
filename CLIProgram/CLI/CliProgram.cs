@@ -249,14 +249,14 @@ namespace CLIProgram.CLI
             {
                 case StartupCode.RequestingVersion:
                     Console.WriteLine(Settings.getVersionInfo()["app"]);
-                    this.Error.quit(1);
+                    this.Error.quit(Error.DefaultCodes.SUCCESS);
                     break;
                 case StartupCode.RequestingHelp:
                     Usage.showHelp();
-                    this.Error.quit(2);
+                    this.Error.quit(Error.DefaultCodes.SUCCESS);
                     break;
                 case StartupCode.InvalidArgumentCount:
-                    this.Error.quit(3, $"Expecting {Settings.MinArgs} arguments but received {Settings.ProgramArgs.Count}");
+                    this.Error.quit(Error.DefaultCodes.INVALIDARGS, $"Expecting {Settings.MinArgs} arguments but received {Settings.ProgramArgs.Count}");
                     break;
                 case StartupCode.Success:
                     // Do nothing
@@ -272,7 +272,7 @@ namespace CLIProgram.CLI
         /// </summary>
         public virtual void Stop()
         {
-            Error.quit(0);
+            Error.quit(Error.DefaultCodes.SUCCESS);
         }
     }
 }
