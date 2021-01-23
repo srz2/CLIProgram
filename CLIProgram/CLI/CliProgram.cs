@@ -249,11 +249,11 @@ namespace CLIProgram.CLI
             {
                 case StartupCode.RequestingVersion:
                     Console.WriteLine(Settings.getVersionInfo()["app"]);
-                    this.Error.quit(Error.DefaultCodes.SUCCESS);
+                    this.Error.quit(Error.DefaultCodes.SHOWVERSION);
                     break;
                 case StartupCode.RequestingHelp:
                     Usage.showHelp();
-                    this.Error.quit(Error.DefaultCodes.SUCCESS);
+                    this.Error.quit(Error.DefaultCodes.SHOWHELP);
                     break;
                 case StartupCode.InvalidArgumentCount:
                     this.Error.quit(Error.DefaultCodes.INVALIDARGS, $"Expecting {Settings.MinArgs} arguments but received {Settings.ProgramArgs.Count}");
