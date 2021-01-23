@@ -24,6 +24,8 @@
     <PropertyGroup>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryType>git</RepositoryType>
+        <AssemblyVersion>1.0.6.0</AssemblyVersion>
+        <FileVersion>1.0.6.0</FileVersion>
     </PropertyGroup>
 
 </Project>

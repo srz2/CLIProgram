@@ -89,7 +89,7 @@ namespace CLIProgram.CLI.Support
         public Dictionary<string, string> getVersionInfo()
         {
             Dictionary<string, string> dic_Version = new Dictionary<string, string>();
-            dic_Version.Add("app", Assembly.GetCallingAssembly().GetName().Version.ToString());
+            dic_Version.Add("app", Assembly.GetEntryAssembly().GetName().Version.ToString());
             dic_Version.Add("lib", Assembly.GetExecutingAssembly().GetName().Version.ToString());
             return dic_Version;
         }
