@@ -33,4 +33,8 @@
       <DefineConstants>DEBUG;TRACE</DefineConstants>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="CLIProgram.xml" />
+    </ItemGroup>
+
 </Project>
