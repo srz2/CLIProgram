@@ -101,12 +101,6 @@
             <param name="args">The program's given argument list</param>
             <param name="minArgs">The minimum allowed arguments</param>
         </member>
-        <member name="M:CLIProgram.CLI.CliProgram.test_startupCheck">
-            <summary>
-            TESTING ONLY - Public method to test the return value of the startup check
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:CLIProgram.CLI.CliProgram.startupCheck">
             <summary>
             <para>Overridable statup check</para>
