@@ -26,7 +26,7 @@
         <RepositoryType>git</RepositoryType>
         <AssemblyVersion>1.0.6.0</AssemblyVersion>
         <FileVersion>1.0.6.0</FileVersion>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     </PropertyGroup>
 
 </Project>
