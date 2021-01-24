@@ -221,6 +221,12 @@
             <para>Default: FALSE</para>
             </summary>
         </member>
+        <member name="F:CLIProgram.CLI.Support.CliProgramSettings.SHOW_HELP_WITH_ARGC_ZERO">
+            <summary>
+            <para>Show the help menu if zero arguments are given when application is launched</para>
+            <para>Default: FALSE</para>
+            </summary>
+        </member>
         <member name="P:CLIProgram.CLI.Support.CliProgramSettings.MinArgs">
             <summary>
             The minimum number of arguments expected

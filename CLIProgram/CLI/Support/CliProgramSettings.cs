@@ -30,6 +30,11 @@ namespace CLIProgram.CLI.Support
         /// <para>Default: FALSE</para>
         /// </summary>
         public bool PAUSE_ON_QUIT;
+        /// <summary>
+        /// <para>Show the help menu if zero arguments are given when application is launched</para>
+        /// <para>Default: FALSE</para>
+        /// </summary>
+        public bool SHOW_HELP_WITH_ARGC_ZERO;
 
         /// <summary>
         /// The minimum number of arguments expected

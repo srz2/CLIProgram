@@ -256,7 +256,12 @@ namespace CLIProgram.CLI
                     this.Error.quit(Error.DefaultCodes.SHOWHELP);
                     break;
                 case StartupCode.InvalidArgumentCount:
-                    this.Error.quit(Error.DefaultCodes.INVALIDARGS, $"Expecting {Settings.MinArgs} arguments but received {Settings.ProgramArgs.Count}");
+                    string msg = $"Expecting {Settings.MinArgs} arguments but received {Settings.ProgramArgs.Count}";
+                    if (Settings.SHOW_HELP_WITH_ARGC_ZERO)
+                    {
+                        msg = Usage.ToString() + "\n" + msg;
+                    }
+                    this.Error.quit(Error.DefaultCodes.INVALIDARGS, msg);
                     break;
                 case StartupCode.Success:
                     // Do nothing
