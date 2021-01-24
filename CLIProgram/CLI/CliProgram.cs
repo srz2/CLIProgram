@@ -220,7 +220,7 @@ namespace CLIProgram.CLI
                 // Check for help flag
                 if (checkForHelpFlag(arg))
                 {
-                    result = StartupResult.createStartupResult  (StartupCode.RequestingHelp, "Program help was requested");
+                    result = StartupResult.createStartupResult(StartupCode.RequestingHelp, "Program help was requested");
                     break;
                 }
             }
