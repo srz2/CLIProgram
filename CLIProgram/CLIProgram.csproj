@@ -29,4 +29,8 @@
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+      <DefineConstants>DEBUG;TRACE</DefineConstants>
+    </PropertyGroup>
+
 </Project>
