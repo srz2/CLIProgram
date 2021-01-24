@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <Authors>Steven Zilberberg</Authors>
     <Company>Steven Zilberberg</Company>
     <Description>An inheritable class to structure CLI Application</Description>
@@ -24,8 +24,8 @@
     <PropertyGroup>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryType>git</RepositoryType>
-        <AssemblyVersion>1.0.6.0</AssemblyVersion>
-        <FileVersion>1.0.6.0</FileVersion>
+        <AssemblyVersion>1.0.7.0</AssemblyVersion>
+        <FileVersion>1.0.7.0</FileVersion>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     </PropertyGroup>
 
